@@ -1,6 +1,7 @@
 //Emma Ko
 //1.16.20
 //Instrutions: This app only works if you enter the values without first putting spaces. Just Type.
+// TEACHER NOTES: i can teach you how to handle that!  we will go over that in class!
 package ch03_ex2_AreaAndPerimeter;
 
 import java.util.Scanner;
