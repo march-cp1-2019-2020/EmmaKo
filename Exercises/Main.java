@@ -16,6 +16,7 @@ public class Main {
 	        String choice = "y";
 	        while (choice.equalsIgnoreCase("y")) {
 	        	System.out.println ("Enter Length");
+			//TEACHER NOTES: length and width variables should be double not int.
 	        	int length = Integer.parseInt(sc.nextLine());
 	        	
 	        	System.out.println ("Enter Width");
