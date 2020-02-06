@@ -1,32 +1,52 @@
-//Emma Ko
-//1.23.2020
-public class Employee {
+//Emma Ko, 2/6/2020
 
-	public void name (String Name) {
-		System.out.println ("Hi! My name is" + Name);
+package Project1;
+
+import MyDate;
+
+public class Employee extends Person {
+	public double office;
+
+	void getoffice() {
+
+	}
+
+	void setoffice() {
+
+	}
+
+	public double salary;
+
+	void getsalary() {
+
+	}
+
+	void setsalary() {
+
+	}
+
+	public String company;
+
+	void getcompany() {
+
+	}
+
+	void setcompany() {
+
 	}
 	
-	public void snn () {
-		
+	public double hours;
+
+	void gethours() {
+
 	}
-	
-	
-	public void dateOfBirth (String dateOfBirth) {
-		System.out.println ("I was born" + dateOfBirth);
+
+	void sethousr() {
+
 	}
-	public double paySalary (int hours) {
-		return hours * 40.00;
+
+	public static void Main(String[] args) {
+
 	}
-	
-	
-	public void takeVacation() {
-		
-	}
-	
-	public static void main(String[] args) {
-		
-	}
-	
+
 }
-	
-
