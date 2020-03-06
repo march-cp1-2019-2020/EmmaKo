@@ -18,6 +18,7 @@ public class Album extends Product {
 	}
 	@Override
     public String toString() {
+	//Artist should be lowercase    
         return super.toString() + " by " + Artist;
     }
 
