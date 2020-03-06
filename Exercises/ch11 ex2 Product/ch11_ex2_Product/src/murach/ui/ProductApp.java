@@ -24,6 +24,7 @@ public class ProductApp {
             // display the output
             System.out.println();
             if (p != null) {
+                // TEACHER NOTES: you should call your new method getDisplayText() here instead of toString()
                 System.out.println("Description: " + p.toString());
                 System.out.println("Price:       " + p.getPriceFormatted());
             } else {
