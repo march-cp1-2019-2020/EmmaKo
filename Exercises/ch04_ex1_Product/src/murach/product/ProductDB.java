@@ -27,6 +27,9 @@ public class ProductDB {
             product.setPrice(54.50);
         } else {
             product.setDescription("Unknown");
+        // TEACHER NOTES: this else if block is unreachable code.  Make sure you are looking at the compile errors in eclipse
+        //  move this block above the else on line 28, because the else on linee 28 catches everything that the else if's 
+        //  above it didn't catch.  Otherwise, this looks great (expensive!)
         } else if (productCode.equalsIgnoreCase ("Emm's Code")) {
         	product.setDescription("Emm's Fabulous Code Factory");
         	product.setPrice(58397.00);
