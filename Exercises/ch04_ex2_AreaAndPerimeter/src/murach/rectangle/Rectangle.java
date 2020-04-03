@@ -20,20 +20,32 @@ public class Rectangle1 {
 	void setwidth() {
 	}
 
-
+	// TEACHER NOTES: this constructor is extra, not really necesssary since you have the one below it doing the same thing.
 public Rectangle1 (length width) {
 	length = 00.00;
 	width = 00.00;
 	}
 
-
+	// TEACHER NOTES: step 4 says the constructor should have zero arguments. like this:
+	//  public Rectangle(){
+	//	length = 0;
+	//	width = 0;
+	//}
+	
+	// typically if calling code passes in values, you would use those values to initialize your variables.
 public Rectangle (length, width) {
 	length = 00.00;
 	width = 00.00;
 }
 
+	// TEACHER NOTES: missing steps 5, 6, 7 where you create these methods (it said you can copy them from Main):
+	// double getArea()
+	// String getFormattedArea() //using NumberFormat class
+	// double getPerimeter()
+	// String getFormattedPerimeter() // usering NumberFormat class
 
-
+	
+	//this should all be in the Main.java
     public static void main(String args[]) {
         System.out.println("Welcome to the Area and Perimeter Calculator");
         System.out.println();
