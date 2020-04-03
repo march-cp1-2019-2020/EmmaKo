@@ -48,10 +48,12 @@ public class Product {
     }    
 }
 
+	// TEACHER NOTES:  don't need a private constructor because no other class could see it.
 	private ProductConstructor ([code, description, price]) {
 	
 }
 
+	// TEACHER NOTES: this constructor already exists at the top of the class so you don't need it again.
 	public Product () {
 		code = "";
 		description = "";
@@ -59,6 +61,7 @@ public class Product {
 
 	}
 
+	// TEACHER NOTES: This is a good constructor! only thing I see is double is misspelled so it won't compile.
 	public Product (String code, String description, doulbe price) {
 		this.code = code;
 		this.description = description;
