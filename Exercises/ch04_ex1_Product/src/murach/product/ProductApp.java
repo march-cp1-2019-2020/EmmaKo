@@ -20,6 +20,7 @@ public class ProductApp {
             String productCode = sc.nextLine();
 
             // get the Product object
+            // TEACHER NOTES: good job!!
             Product product = ProductDB.getProduct(productCode);
 
             // display the output
@@ -38,7 +39,8 @@ public class ProductApp {
         System.out.println("Bye!");
     }
 }
-
+// TEACHER NOTES: these are extra parenthesis.  You have too many so it will not compile.
+//  make sure you are using your compiler and it will tell you they are unmatched.
 }
 }
 }
