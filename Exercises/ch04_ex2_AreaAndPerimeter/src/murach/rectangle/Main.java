@@ -5,6 +5,11 @@ import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Main {
+	
+	// Step 8 to create a Rectangle object:
+	// Rectange r = new Rectangle();
+	// r.setLength(5);
+	// r.setWidth(4);
 
 	Main Rectangle;
 	Rectangle = new Main (String args []) {
@@ -33,6 +38,7 @@ public class Main {
 			double width = Double.parseDouble(sc.nextLine());
 
 			// calculate total
+			//TEACHER NOTES: you need to use the methods created in the Rectangle class instead of doing the math here.
 			double area = width * length;
 			double perimeter = 2 * width + 2 * length;
 
