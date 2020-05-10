@@ -55,20 +55,27 @@ public class Invoice {
 		return dtf.format(invoiceDate);
 	}
 
+	//TEACHER NOTES: Step 3 states this method should return a LocalDateTime type not a String.
 	public String getDueDate() {
     
-		String DueDate;
-		return DueDate LocalDateTime newDateTime = invoiceDate.plus(30, ChronoUnit.DAYS);
+		//TEACHER NOTES: try this:
+		LocalDateTime dueDate = invoiceDate.plus(30, ChronoUnit.DAYS);
+		return dueDate;
+		
+		//String DueDate;
+		//return DueDate LocalDateTime newDateTime = invoiceDate.plus(30, ChronoUnit.DAYS);
 		//This error wants a ; at the end of the return statement but there is one. I don't know what to do. 
 		
+		//TEACHER NOTES: you are trying to declare a new variable newDateTime on the same line you are doing your return statement.
+		// you can't do that.  If you want to declare a new variable you need to do it before your return.  See my edits above.
+	
 	}
 	
 
-	public String DueDateFormatted () {
-    	 DateTimeFormatter dtf = DateTimeFormatter.ofLocalizedDate(
-                FormatStyle.MEDIUM);        
-        return dtf.format(DueDate);
-    	
+	public String getDueDateFormatted () {
+    		DateTimeFormatter dtf = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM);     
+		//TEACHER NOTES: DueDate is not a variable visible to this method. call your new method you created in step 3:
+        	return dtf.format(getDueDate());	
     }
 	
     
