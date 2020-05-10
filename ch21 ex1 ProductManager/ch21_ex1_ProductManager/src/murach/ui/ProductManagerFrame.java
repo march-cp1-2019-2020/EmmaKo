@@ -76,6 +76,7 @@ public class ProductManagerFrame extends JFrame {
        JButton printButton = new JButton ("Print");
        printButton.setToolTipText(("Delete selected product");
        printButton.addActionListener ((ActionEvent) -> { 
+	       // TEACHER NOTES: where is this method defined?
     	   doprintButton();
        });
  
